@@ -5,6 +5,7 @@ namespace Common;
 public class RabbitMQConnectionFactory
 {
     public static string QueueName = "hello-queue";
+    public static string FanoutExchangeName = "long-fanout"; 
     public static ConnectionFactory GetRabbitMqConnection()
     {
         ConnectionFactory factory = new ConnectionFactory();
